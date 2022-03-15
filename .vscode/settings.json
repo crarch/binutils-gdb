@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "loongarch.h": "c",
+    "loongarch-lex.h": "c",
+    "elfxx-loongarch.h": "c"
+  }
+}

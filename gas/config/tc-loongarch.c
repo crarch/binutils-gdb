@@ -73,7 +73,8 @@ struct loongarch_cl_insn
 };
 
 #ifndef DEFAULT_ARCH
-#define DEFAULT_ARCH "loongarch64"
+// #define DEFAULT_ARCH "loongarch64"
+#define DEFAULT_ARCH "loongarch32"
 #endif
 
 /* This array holds the chars that always start a comment.  If the
