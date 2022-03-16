@@ -1,0 +1,1 @@
+../lt~obsolete.m4

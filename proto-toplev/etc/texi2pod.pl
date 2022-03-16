@@ -1,0 +1,1 @@
+../../etc/texi2pod.pl
