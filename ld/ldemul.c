@@ -328,11 +328,16 @@ ldemul_choose_mode (char *target)
     target += 3;
   for (; *eptr; eptr++)
     {
+      // fprintf(stderr, "comparing: %s, %s\n", target, (*eptr)->emulation_name);
       if (strcmp (target, (*eptr)->emulation_name) == 0)
 	{
 	  ld_emulation = *eptr;
 	  return;
-	}
+    // set default loongarch elf: 32
+	} else if (strcmp(target, "elfloongarch") == 0 && strcmp((*eptr)->emulation_name, "elf32loongarch") == 0) {
+    ld_emulation = *eptr;
+	  return;
+  }
     }
   einfo (_("%P: unrecognised emulation mode: %s\n"), target);
   einfo (_("Supported emulations: "));
